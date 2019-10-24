@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+
+    <link type="stylesheet" href="assets/css/style.css" />
+    <link type="stylesheet" href="assets/css/reset.css" />
+  </head>
+
+  <body>
+    <p>Click the button to display a random number between 1 and 120.</p>
+
+    <button>Random Number</button>
+
+    <p id="RandomNumber"></p>
+    <p id="currentScore">0</p>
+    <p>Current wins: <span id="wins">0</span></p>
+    <p>Current lost: <span id="loses">0</span></p>
+
+    <div id="gemButtons">
+      <button type="button" id="button1" class="btn btn-outline-dark"></button>
+      <button type="button" id="button2" class="btn btn-outline-dark"></button>
+      <button type="button" id="button3" class="btn btn-outline-dark"></button>
+      <button type="button" id="button4" class="btn btn-outline-dark"></button>
+    </div>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+  </body>
+</html>
