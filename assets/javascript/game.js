@@ -10,18 +10,19 @@ let total = 0;
 let wins = 0;
 let lose = 0;
 
-var x = getRandom(19, 120);
+var x = getRandom(19, 50);
 document.getElementById("RandomNumber").innerHTML = x;
 function win() {
   if (total == x) {
     wins++;
+    $("#currentScore").text(0);
   }
 }
 
 function lost() {
   if (total > x) {
     lose++;
-    let randomNumber = getRandom(19, 120);
+    let randomNumber = getRandom(19, 50);
     $("#RandomNumber").text(randomNumber);
     $("#currentScore").text(0);
     total = 0;
@@ -62,5 +63,6 @@ $("#button4").on("click", function() {
   total = total + button4;
   win();
   lost();
+  displayScore();
   console.log(button4);
 });
